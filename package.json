@@ -1,0 +1,27 @@
+{
+  "name": "expense-tracker-app",
+  "version": "1.0.0",
+  "description": "Learning React With Project",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhaval1997/React-Expense-App.git"
+  },
+  "author": "Dhaval Prajapati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhaval1997/React-Expense-App/issues"
+  },
+  "homepage": "https://github.com/dhaval1997/React-Expense-App#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

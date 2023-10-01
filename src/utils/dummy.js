@@ -1,0 +1,88 @@
+const dummyData = [
+  {
+    id: 1,
+    title: "Product A",
+    price: 19.99,
+    date: "2023-10-01",
+    locationOfExpenditure: "unknown",
+  },
+  {
+    id: 2,
+    title: "Product B",
+    price: 29.99,
+    date: "2023-10-02",
+    locationOfExpenditure: "at Work",
+  },
+  {
+    id: 3,
+    title: "Product C",
+    price: 9.99,
+    date: "2023-10-03",
+    locationOfExpenditure: "hahaha",
+  },
+  {
+    id: 4,
+    title: "Product D",
+    price: 39.99,
+    date: "2023-10-04",
+    locationOfExpenditure: "not defined",
+  },
+  {
+    id: 1,
+    title: "Product A",
+    price: 19.99,
+    date: "2023-10-01",
+    locationOfExpenditure: "unknown",
+  },
+  {
+    id: 2,
+    title: "Product B",
+    price: 29.99,
+    date: "2023-10-02",
+    locationOfExpenditure: "at Work",
+  },
+  {
+    id: 3,
+    title: "Product C",
+    price: 9.99,
+    date: "2023-10-03",
+    locationOfExpenditure: "hahaha",
+  },
+  {
+    id: 4,
+    title: "Product D",
+    price: 39.99,
+    date: "2023-10-04",
+    locationOfExpenditure: "not defined",
+  },
+  {
+    id: 1,
+    title: "Product A",
+    price: 19.99,
+    date: "2023-10-01",
+    locationOfExpenditure: "unknown",
+  },
+  {
+    id: 2,
+    title: "Product B",
+    price: 29.99,
+    date: "2023-10-02",
+    locationOfExpenditure: "at Work",
+  },
+  {
+    id: 3,
+    title: "Product C",
+    price: 9.99,
+    date: "2023-10-03",
+    locationOfExpenditure: "hahaha",
+  },
+  {
+    id: 4,
+    title: "Product D",
+    price: 39.99,
+    date: "2023-10-04",
+    locationOfExpenditure: "not defined",
+  },
+];
+
+export default dummyData;

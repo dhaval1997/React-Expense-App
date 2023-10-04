@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ExpenseItem.css";
 import "./ExpenseDate.css";
+import Card from "./Card"
 
 const ExpenseItem = ({ date, title, price, location }) => {
   const month = date.toLocaleString("en-US", { month: "long" });
@@ -16,7 +17,7 @@ const ExpenseItem = ({ date, title, price, location }) => {
 
   return (
     <>
-      <div className="expense-item">
+      <Card className="expense-item">
         <div className="expense-date">
           <div className="expense-date__month">{month}</div>
           <div className="expense-date__day">{day}</div>
@@ -29,7 +30,7 @@ const ExpenseItem = ({ date, title, price, location }) => {
           <div className="expense-item__price">${currentPrice}</div>
           <button onClick={changePrice}>Change Price</button>
         </div>
-      </div>
+      </Card>
     </>
   );
 };

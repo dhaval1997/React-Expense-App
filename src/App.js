@@ -8,9 +8,9 @@ const AppLayout = () => {
     <>
       <div className="parent">
         <h1>Expense items</h1>
-        {
-            dummyData.map((data)=><ExpenseItem key={data.id} {...data} />)
-        }
+        {dummyData.map((data) => (
+          <ExpenseItem key={data.id} {...data} />
+        ))}
       </div>
     </>
   );

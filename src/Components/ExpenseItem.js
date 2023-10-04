@@ -1,16 +1,17 @@
+import React, { useState } from "react";
 import "./ExpenseItem.css";
 import "./ExpenseDate.css";
 
 const ExpenseItem = ({ date, title, price, location }) => {
   const month = date.toLocaleString("en-US", { month: "long" });
   const day = date.toLocaleString("en-US", { day: "2-digit" });
-  const year = date.getFullYear(); // Extract the year from the date
+  const year = date.getFullYear();
 
-  const handleDeleteExpense = () => {
-    const expenseItem = document.querySelector(".expense-item__description");
-    if (expenseItem) {
-      expenseItem.closest(".expense-item").remove();
-    }
+  const [currentPrice, setCurrentPrice] = useState(price);
+
+  const changePrice = () => {
+    // Set the price to $100 when the button is clicked
+    setCurrentPrice(100);
   };
 
   return (
@@ -19,16 +20,14 @@ const ExpenseItem = ({ date, title, price, location }) => {
         <div className="expense-date">
           <div className="expense-date__month">{month}</div>
           <div className="expense-date__day">{day}</div>
-          <div className="expense-date__year">{year}</div> {/* Add year */}
+          <div className="expense-date__year">{year}</div>
         </div>
         <div className="expense-item__description">
           <h2>
             {title} {location}
           </h2>
-          <div className="expense-item__price">{price}</div>
-          <button value={title} onClick={handleDeleteExpense}>
-            Delete Expense
-          </button>
+          <div className="expense-item__price">${currentPrice}</div>
+          <button onClick={changePrice}>Change Price</button>
         </div>
       </div>
     </>

@@ -5,13 +5,13 @@ import dummyData from "./utils/dummy";
 import Card from "./Components/Card";
 import "./Components/Expenses.css";
 import NewExpense from "./Components/NewExpense";
-import ExpenseForm from "./Components/ExpenseForm ";
 
 const AppLayout = () => {
   const [expenses, setExpense] = useState(dummyData);
 
-  const addExpenseHandler = (newExpene) => {
-    setExpense((prevExpense) => [newExpene, ...prevExpense]);
+  const addExpenseHandler = (newExpense) => {
+    setExpense((prevExpense) => [newExpense, ...prevExpense]);
+    console.log(newExpense);
   };
 
   return (

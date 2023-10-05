@@ -3,17 +3,17 @@ import "./ExpenseItem.css";
 import "./ExpenseDate.css";
 import Card from "./Card"
 
-const ExpenseItem = ({ date, title, price, location }) => {
+const ExpenseItem = ({ date, title, amount, location }) => {
   const month = date.toLocaleString("en-US", { month: "long" });
   const day = date.toLocaleString("en-US", { day: "2-digit" });
   const year = date.getFullYear();
 
-  const [currentPrice, setCurrentPrice] = useState(price);
+  // const [currentamount, setCurrentamount] = useState(amount);
 
-  const changePrice = () => {
-    // Set the price to $100 when the button is clicked
-    setCurrentPrice(100);
-  };
+  // const changeamount = () => {
+  //   // Set the amount to $100 when the button is clicked
+  //   setCurrentamount(100);
+  // };
 
   return (
     <>
@@ -27,8 +27,8 @@ const ExpenseItem = ({ date, title, price, location }) => {
           <h2>
             {title} {location}
           </h2>
-          <div className="expense-item__price">${currentPrice}</div>
-          <button onClick={changePrice}>Change Price</button>
+          <div className="expense-item__amount">Rs.{amount}</div>
+          {/* <button onClick={changeamount}>Change amount</button> */}
         </div>
       </Card>
     </>

@@ -8,13 +8,6 @@ const ExpenseItem = ({ date, title, amount, location }) => {
   const day = date.toLocaleString("en-US", { day: "2-digit" });
   const year = date.getFullYear();
 
-  // const [currentamount, setCurrentamount] = useState(amount);
-
-  // const changeamount = () => {
-  //   // Set the amount to $100 when the button is clicked
-  //   setCurrentamount(100);
-  // };
-
   return (
     <>
       <Card className="expense-item">

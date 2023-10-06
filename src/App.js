@@ -7,6 +7,7 @@ import "./Components/Expenses.css";
 import NewExpense from "./Components/NewExpense";
 import ExpensesFilter from "./Components/ExpenseFilter";
 import ExpenseList from "./Components/ExpenseList";
+import ExpensesChart from "./Components/ExpensesChart";
 
 const AppLayout = () => {
   const [expenses, setExpense] = useState(dummyData);
@@ -33,6 +34,7 @@ const AppLayout = () => {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
+        <ExpensesChart expenses = {filteredExpenses} />
         <ExpenseList items={filteredExpenses} />
       </Card>
     </>

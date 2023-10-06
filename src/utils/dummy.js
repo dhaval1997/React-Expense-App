@@ -3,7 +3,7 @@ const dummyData = [
     id: 1,
     title: "Product A",
     amount: 1999,
-    date: new Date(2020, 7, 14),
+    date: new Date(2022, 7, 14),
     location: "Surat",
   },
   {

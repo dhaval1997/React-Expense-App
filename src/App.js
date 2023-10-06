@@ -6,6 +6,7 @@ import Card from "./Components/Card";
 import "./Components/Expenses.css";
 import NewExpense from "./Components/NewExpense";
 import ExpensesFilter from "./Components/ExpenseFilter";
+import ExpenseList from "./Components/ExpenseList";
 
 const AppLayout = () => {
   const [expenses, setExpense] = useState(dummyData);
@@ -32,9 +33,7 @@ const AppLayout = () => {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-        {filteredExpenses.map((data) => (
-          <ExpenseItem key={data.id} {...data} />
-        ))}
+        <ExpenseList items={filteredExpenses} />
       </Card>
     </>
   );
